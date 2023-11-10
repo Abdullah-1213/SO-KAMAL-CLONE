@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles2.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+            .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .hover-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      text-align: center;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+
+    .image-container:hover .hover-content {
+      opacity: 1;
+    }
+
+    .checkbox-group {
+      display: none;
+    }
+
+    .image-container:hover .checkbox-group {
+      display: block;
+    }
+
+    .shop-button {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .image-container:hover .shop-button {
+      display: block;
+    }
+
+
+  
+      </style>
+    
+</head>
+<body>
+    <header>
+        <div class=" container-fluid ">
+
+            <!-- <div class="row  px-2 color-header">
+                <p class="col-4   text-start">YOUR ORDER DELIEVER IN 10 BUISNESS DAYS</p>
+                <p class="col-4   text-center">FREE SHIPPING IN PAKISTAN.</p>
+                <p class="col-4   text-end">FOR QUERIES, CALL 0312-7652625</p>
+            </div> -->
+            <div class="row px-2 color-header">
+              <div class="col-12">
+                  <!-- Sliding carousel for mobile -->
+                  <div id="headerCarousel" class="carousel slide d-md-none" data-bs-ride="carousel" data-bs-interval="3000">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <p class="text-center">YOUR ORDER DELIVERED IN 10 BUSINESS DAYS</p>
+                          </div>
+                          <div class="carousel-item">
+                              <p class="text-center">FREE SHIPPING IN PAKISTAN.</p>
+                          </div>
+                          <div class="carousel-item">
+                              <p class="text-center">FOR QUERIES, CALL 0312-7652625</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Static content for desktop -->
+                  <div class="d-none d-md-flex row">
+                      <p class="col-md-4 text-start">YOUR ORDER DELIVERED IN 10 BUSINESS DAYS</p>
+                      <p class="col-md-4 text-center">FREE SHIPPING IN PAKISTAN.</p>
+                      <p class="col-md-4 text-end">FOR QUERIES, CALL 0312-7652625</p>
+                  </div>
+              </div>
+          </div>
+          
+          
+
+          
+            <div class="row text-bar">
+                <div class="col-lg-3 col-sm-1 search-bar  mx-1 text-start">
+                    <div class="input-group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search  my-3 searched " viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                             </svg>
+                            <input type="search" class="form-control my-1" placeholder="Search...">
+                    </div>
+                </div>
+                
+
+                <div class="col-lg-6 col-sm-1 main-logo text-center"> 
+                    <img class="img-fluid" src="sokamal.png" alt="logo">
+                </div>
+                <div class="col-lg-2 col-sm-1 text-end my-3 mx-5">
+                    <img class="img-fluid heart" src="Vector (1).png" alt="pi">
+                    <img class="img-fluid person ms-3" src="Group.png" alt="pi">
+                    <img class="img-fluid  Add-to ms-3" src="Group 1.png" alt="pi">
+                </div>   
+      
+            </div>
+            
+            <hr>
+            <div class="row nav-bar" style="margin: 0;" >
+                <div class="wrapper ">
+                    
+                        <button type="button" class="btn btn-warning btn-sm mb-3">NEW</button>
+                    
+                    
+                        <button type="button" class="btn btn-danger btn-sm mb-3 ms-3">SALE</button>
+    
+                        <ul class="nav-link list-unstyled">
+                            <li><a href="#">UNSTITCHED</a>
+                                <div class="mega-box" style="z-index: 9999;">
+                                  <div class="content">
+                                    <div class="main">
+                                       <p>UNSTITCHED</p>
+                                       <ul class="mega-links list-unstyled ">
+                                          <li >
+                                            <a href="#">
+                                                Embroidered
+                                            </a>
+                                            
+                                          </li>
+                                          <li>
+                                            <a href="#">
+                                                printed
+                                            </a>
+                                            
+                                          </li>
+                                          <li>
+                                            <a href="#">
+                                                digital
+                                            </a>
+                                            
+                                          </li>
+                                          <li>
+                                            <a href="#">
+                                                premium
+                                            </a>
+                                            
+                                          </li>
+                                          <li>
+                                            <a href="#">
+                                                paste printed
+                                            </a>
+                                            
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <div class="main">
+                                      <p>PRET</p>
+                                      <ul class="mega-links list-unstyled">
+                                         <li>
+                                           <a href="#">
+                                               Embroidered
+                                           </a>
+                                           
+                                         </li>
+                                         <li>
+                                           <a href="#">
+                                               printed
+                                           </a>
+                                           
+                                         </li>
+                                         <li>
+                                           <a href="#">
+                                               digital
+                                           </a>
+                                           
+                                         </li>
+                                         <li>
+                                           <a href="#">
+                                               premium
+                                           </a>
+                                           
+                                         </li>
+                                         <li>
+                                           <a href="#">
+                                               paste printed
+                                           </a>
+                                           
+                                         </li>
+                                      </ul>
+                                   </div>
+                                   <div class="main">
+                                       <img class="mega-image" src="../Facebook/800x560 4.jpg" alt="">
+                                   </div>
+                                  </div>
+                                </div>
+                            </li>
+                          </ul>
+                    <ul class="nav-link list-unstyled">
+                        <li><a href="#">PRET</a>
+                            <div class="mega-box" style="z-index: 9999;">
+                              <div class="content">
+                                <div class="main">
+                                   <p>UNSTITCHED</p>
+                                   <ul class="mega-links  list-unstyled">
+                                      <li>
+                                        <a href="#">
+                                            Embroidered
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            printed
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            digital
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            premium
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            paste printed
+                                        </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="main">
+                                  <p>PRET</p>
+                                  <ul class="mega-links list-unstyled">
+                                     <li>
+                                       <a href="#">
+                                           Embroidered
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           printed
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           digital
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           premium
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           paste printed
+                                       </a>
+                                     </li>
+                                  </ul>
+                               </div>
+                               <div class="main">
+                                   <img class="mega-image" src="../Facebook/800x560 3.jpg" alt="">
+                               </div>
+                              </div>
+                            </div>
+                        </li>
+                      </ul>
+                    <ul class="nav-link list-unstyled">
+                        <li><a href="#">SEPERATES</a>
+                            <div class="mega-box" style="z-index: 9999;">
+                              <div class="content">
+                                <div class="main">
+                                   <p>UNSTITCHED</p>
+                                   <ul class="mega-links list-unstyled">
+                                      <li>
+                                        <a href="#">
+                                            Embroidered
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            printed
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            digital
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            premium
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            paste printed
+                                        </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="main">
+                                  <p>PRET</p>
+                                  <ul class="mega-links list-unstyled">
+                                     <li>
+                                       <a href="#">
+                                           Embroidered
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           printed
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           digital
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           premium
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           paste printed
+                                       </a>
+                                     </li>
+                                  </ul>
+                               </div>
+                               <div class="main">
+                                   <img class="mega-image" src="../Facebook/800x560 1.jpg" alt="">
+                               </div>
+                              </div>
+                            </div>
+                        </li>
+                      </ul>
+                    <ul class="nav-link list-unstyled">
+                        <li><a href="#">HOME COUTURE</a>
+                            <div class="mega-box" style="z-index: 9999;">
+                              <div class="content">
+                                <div class="main">
+                                   <p>UNSTITCHED</p>
+                                   <ul class="mega-links list-unstyled">
+                                      <li>
+                                        <a href="#">
+                                            Embroidered
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            printed
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            digital
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            premium
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            paste printed
+                                        </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="main">
+                                  <p>PRET</p>
+                                  <ul class="mega-links list-unstyled">
+                                     <li>
+                                       <a href="#">
+                                           Embroidered
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           printed
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           digital
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           premium
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           paste printed
+                                       </a>
+                                     </li>
+                                  </ul>
+                               </div>
+                               <div class="main">
+                                   <img class="mega-image" src="../Facebook/800x560 2.jpg" alt="">
+                               </div>
+                              </div>
+                            </div>
+                        </li>
+                      </ul>
+                    <ul class="nav-link list-unstyled">
+                        <li><a href="#">WORLD OF SO KAMAL</a>
+                            <div class="mega-box" style="z-index: 9999;">
+                              <div class="content">
+                                <div class="main">
+                                   <p>UNSTITCHED</p>
+                                   <ul class="mega-links list-unstyled">
+                                      <li>
+                                        <a href="#">
+                                            Embroidered
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            printed
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            digital
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            premium
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            paste printed
+                                        </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="main">
+                                  <p>PRET</p>
+                                  <ul class="mega-links list-unstyled">
+                                     <li>
+                                       <a href="#">
+                                           Embroidered
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           printed
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           digital
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           premium
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           paste printed
+                                       </a>
+                                     </li>
+                                  </ul>
+                               </div>
+                               <div class="main">
+                                   <img class="mega-image" src="../Facebook/800x560 4.jpg" alt="">
+                               </div>
+                              </div>
+                            </div>
+                        </li>
+                      </ul>
+                    <ul class="nav-link list-unstyled">
+                        <li><a href="#">SIZE CHART</a>
+                            <div class="mega-box" style="z-index: 9999;">
+                              <div class="content">
+                                <div class="main">
+                                   <p>UNSTITCHED</p>
+                                   <ul class="mega-links list-unstyled">
+                                      <li>
+                                        <a href="#">
+                                            Embroidered
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            printed
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            digital
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            premium
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            paste printed
+                                        </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="main">
+                                  <p>PRET</p>
+                                  <ul class="mega-links">
+                                     <li>
+                                       <a href="#">
+                                           Embroidered
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           printed
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           digital
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           premium
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           paste printed
+                                       </a>
+                                     </li>
+                                  </ul>
+                               </div>
+                               <div class="main">
+                                   <img class="mega-image" src="../Facebook/800x560 3.jpg" alt="">
+                               </div>
+                              </div>
+                            </div>
+                        </li>
+                      </ul>
+                    </ul>
+                    
+                    <ul class="nav-link list-unstyled">
+                        <li><a href="#">HOW TO ORDER</a>
+                            <div class="mega-box" style="z-index: 9999;">
+                              <div class="content">
+                                <div class="main">
+                                   <p>UNSTITCHED</p>
+                                   <ul class="mega-links list-unstyled">
+                                      <li>
+                                        <a href="#">
+                                            Embroidered
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            printed
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            digital
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            premium
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                            paste printed
+                                        </a>
+                                      </li>
+                                   </ul>
+                                </div>
+                                <div class="main">
+                                  <p>PRET</p>
+                                  <ul class="mega-links list-unstyled">
+                                     <li>
+                                       <a href="#">
+                                           Embroidered
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           printed
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           digital
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           premium
+                                       </a>
+                                     </li>
+                                     <li>
+                                       <a href="#">
+                                           paste printed
+                                       </a>
+                                     </li>
+                                  </ul>
+                               </div>
+                               <div class="main">
+                                   <img class="mega-image" src="../Facebook/800x560 4.jpg" alt="">
+                               </div>
+                              </div>
+                            </div>
+                        </li>
+                      </ul>
+                    </ul>
+                    <ul class="nav-link list-unstyled">
+                      <li><a href="#">STORE LOCATION</a>
+                          <div class="mega-box" style="z-index: 9999;">
+                            <div class="content">
+                              <div class="main">
+                                 <p>UNSTITCHED</p>
+                                 <ul class="mega-links list-unstyled">
+                                    <li>
+                                      <a href="#">
+                                          Embroidered
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                          printed
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                          digital
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                          premium
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="#">
+                                          paste printed
+                                      </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="main">
+                                <p>PRET</p>
+                                <ul class="mega-links list-unstyled">
+                                   <li>
+                                     <a href="#">
+                                         Embroidered
+                                     </a>
+                                   </li>
+                                   <li>
+                                     <a href="#">
+                                         printed
+                                     </a>
+                                   </li>
+                                   <li>
+                                     <a href="#">
+                                         digital
+                                     </a>
+                                   </li>
+                                   <li>
+                                     <a href="#">
+                                         premium
+                                     </a>
+                                   </li>
+                                   <li>
+                                     <a href="#">
+                                         paste printed
+                                     </a>
+                                   </li>
+                                </ul>
+                             </div>
+                             <div class="main">
+                                 <img class="mega-image" src="../Facebook/800x560 2.jpg" alt="">
+                             </div>
+                            </div>
+                          </div>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </nav>
+            </div>
+                    
+        </div>
+        </div>
+    </header>
+
+     
+    <div class="container-fluid main-image col-lg-12 col-sm-12">
+        <img class="w-100" src="Rectangle 141.jpg" alt="back" >
+
+    </div>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12 px-5 py-5">
+                <h5>CATEGORY 
+                   <hr>
+                </h5>
+                
+                <ul class="list-unstyled checked-cloth">
+                   <li>
+                       <label>
+                           <input class="filter-checkbox" type="checkbox" value="Arzish">
+                           <span class="ms-2">Arzish</span>
+                       </label>
+                   </li>
+                       <label>
+                           <input class="filter-checkbox" type="checkbox" value="Printed">
+                           <span class="ms-2">Printed</span>
+                       </label>
+                   </li>
+                   <li>
+                       <label>
+                           <input class="filter-checkbox" type="checkbox" value="Premium">
+                           <span class="ms-2">Premium</span>
+                       </label>
+                   </li>
+                   <li>
+                       <label>
+                           <input class="filter-checkbox" type="checkbox" value="Embroidered">
+                           <span class="ms-2">Embroidered</span>
+                       </label>
+                   </li>
+                   <li>
+                       <label>
+                           <input class="filter-checkbox" type="checkbox" value="Luxury">
+                           <span class="ms-2">Luxury</span>
+                       </label>
+                   </li>
+                </ul>
+               <h5 >SIZE<hr></h5>
+               <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
+                   <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                   <label class="btn btn-outline-secondary me-2 noBorderRadius" for="btnradio1">XS</label>
+               
+                   <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                   <label class="btn btn-outline-secondary me-2" for="btnradio2">S</label>
+               
+                   <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                   <label class="btn btn-outline-secondary me-2" for="btnradio3">M</label>
+       
+                   <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                   <label class="btn btn-outline-secondary me-2" for="btnradio4">L</label>
+       
+                   <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio5" autocomplete="off">
+                   <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5">XL</label>
+                 </div>
+                 <h5><br>PRICE 
+                   <hr>
+                </h5>
+                
+                <ul class="list-unstyled">
+                   <li>
+                       <label>
+                           <input class="filter-checkbox" type="checkbox" name="prices"  value="Below 1500 ">
+                           <span class="ms-2">Below 1500 </span>
+                       </label>
+                   </li>
+                       <label>
+                           <input class="filter-checkbox" type="checkbox" name="prices" value="PKR 1500 - 3000">
+                           <span class="ms-2">PKR 1500 - 3000</span>
+                       </label>
+                   </li>
+                   <li>
+                       <label>
+                           <input class="filter-checkbox" type="checkbox" name="prices"  value="PKR 3000 - 4000">
+                           <span class="ms-2">PKR 3000 - 4000</span>
+                       </label>
+                   </li>
+                   <li>
+                       <label>
+                           <input class="filter-checkbox" type="checkbox" name="prices"  value="PKR 4000 - 5000">
+                           <span class="ms-2">PKR 4000 - 5000</span>
+                       </label>
+                   </li>
+                   <li>
+                       <label>
+                           <input class="filter-checkbox" type="checkbox" name="prices" value="above 5000">
+                           <span class="ms-2">above 5000</span>
+                       </label>
+                   </li>
+                   </ul> 
+       
+               </div>
+              
+               
+               <div class="col-lg-9 col-sm-12">
+                    <div class="row  annoucment">
+                        <div class="col-6 text-start">
+                            <p>We found 10 products available for you</p>
+                        </div>
+                        <div class="col-6 text-end ">
+                            <div class="dropdown">
+                                <button class="  btn butt py-2 dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Sort By
+                                </button>
+                                <ul class=" dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                  <li><a class="dropdown-item active" href="#">Best Selling</a></li>
+                                  <li><a class="dropdown-item" href="#">High to Low prices</a></li>
+                                  <li><a class="dropdown-item" href="#">Low to High prices</a></li>
+                                  
+                                </ul>
+                              </div>
+                          </div>
+                    </div>
+                    <!-- products images in 1st row -->
+                   
+            <div class="row ">
+                   
+                        <div class="col-lg-4 col-md-6 col-sm-6" >
+                            <div class="image-container">
+                                <img src="../Facebook/Rectangle 22.png" alt="Image" class="img-fluid">
+                                <div class="hover-content">
+                                  <div class="checkbox-group ">
+                                   <div class="row " style="display: flex;
+                                   margin-right: -2em;
+                                   margin-top: 21em;
+                                   margin-left: -1em;">
+                                    <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                                  
+                                    <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                                
+                                    <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+                          
+                                    <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                                    
+                                    <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                                   </div>
+                          
+                                   
+                                  </div>
+                                  <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                                  margin-right: 7em;">ADD TO CART</button>
+                                </div>
+                        
+                            <div class="product-description">
+                                <p class=" text-center">UNSTITCHED COLLECTION</p>
+                                <p class=" text-center">fusion Top-1Pc</p>
+                                <p class="fw-bold text-center">Rs.1,390.00</p>
+                            </div>
+                            
+                          
+                        </div>
+                        
+                       
+                      
+                    </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6" >
+                            <div class="image-container">
+                                <img src="../Facebook/Rectangle 23.png" alt="Image" class="img-fluid">
+                                <div class="hover-content">
+                                <div class="checkbox-group ">
+                                <div class="row " style="display: flex;
+                                margin-right: -2em;
+                                margin-top: 21em;
+                                margin-left: -1em;">
+                                    <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                                
+                                    <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                                
+                                    <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+                        
+                                    <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                                    
+                                    <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                                </div>
+                        
+                                
+                                </div>
+                                <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                                margin-right: 7em;">ADD TO CART</button>
+                                </div>
+                        
+                            <div class="product-description">
+                                <p class=" text-center">UNSTITCHED COLLECTION</p>
+                                <p class=" text-center">fusion Top-1Pc</p>
+                                <p class="fw-bold text-center">Rs.1,390.00</p>
+                            </div>
+                            
+                        
+                        </div>
+                        
+                     
+                    </div>
+
+                        <div class="col-lg-4 col-md-12 col-sm-12 ">
+                            <div class="image-container">
+                                <img src="../Facebook/Rectangle 24.png" alt="Image" class="img-fluid">
+                                <div class="hover-content">
+                                <div class="checkbox-group ">
+                                <div class="row " style="display: flex;
+                                margin-right: -2em;
+                                margin-top: 21em;
+                                margin-left: -1em;">
+                                    <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                                
+                                    <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                                
+                                    <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+                        
+                                    <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                                    
+                                    <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                                </div>
+                        
+                                
+                                </div>
+                                <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                                margin-right: 7em;">ADD TO CART</button>
+                                </div>
+                        
+                            <div class="product-description">
+                                <p class=" text-center">UNSTITCHED COLLECTION</p>
+                                <p class=" text-center">fusion Top-1Pc</p>
+                                <p class="fw-bold text-center">Rs.1,390.00</p>
+                            </div>
+                            
+                        
+                        </div>
+                        
+                        
+                        
+                    </div>
+            </div>
+            <!-- end of 1st row -->
+            <!-- start of 2nd row product -->
+            <div class="row">
+                   
+                <div class="col-lg-4 col-sm-6 ">
+                    <div class="image-container">
+                        <img src="../Facebook/Rectangle 145.png" alt="Image" class="img-fluid">
+                        <div class="hover-content">
+                          <div class="checkbox-group ">
+                           <div class="row " style="display: flex;
+                           margin-right: -2em;
+                           margin-top: 21em;
+                           margin-left: -1em;">
+                            <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                          
+                            <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                        
+                            <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+                  
+                            <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                            
+                            <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                           </div>
+                  
+                           
+                          </div>
+                          <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                          margin-right: 7em;">ADD TO CART</button>
+                        </div>
+                
+                    <div class="product-description">
+                        <p class=" text-center">UNSTITCHED COLLECTION</p>
+                        <p class=" text-center">fusion Top-1Pc</p>
+                        <p class="fw-bold text-center">Rs.1,390.00</p>
+                    </div>
+                    
+                  
+                </div>
+                
+               
+              
+            </div>
+                <div class="col-lg-4 col-sm-6 ">
+                    <div class="image-container">
+                        <img src="../Facebook/Rectangle 146.png" alt="Image" class="img-fluid">
+                        <div class="hover-content">
+                        <div class="checkbox-group ">
+                        <div class="row " style="display: flex;
+                        margin-right: -2em;
+                        margin-top: 21em;
+                        margin-left: -1em;">
+                            <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                        
+                            <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                        
+                            <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+                
+                            <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                            
+                            <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                        </div>
+                
+                        
+                        </div>
+                        <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                        margin-right: 7em;">ADD TO CART</button>
+                        </div>
+                
+                    <div class="product-description">
+                        <p class=" text-center">UNSTITCHED COLLECTION</p>
+                        <p class=" text-center">fusion Top-1Pc</p>
+                        <p class="fw-bold text-center">Rs.1,390.00</p>
+                    </div>
+                    
+                
+                </div>
+                
+             
+            </div>
+
+                <div class="col-lg-4 col-sm-6 ">
+                    <div class="image-container">
+                        <img src="../Facebook/Rectangle 147.png" alt="Image" class="img-fluid">
+                        <div class="hover-content">
+                        <div class="checkbox-group ">
+                        <div class="row " style="display: flex;
+                        margin-right: -2em;
+                        margin-top: 21em;
+                        margin-left: -1em;">
+                            <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                        
+                            <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                        
+                            <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+                
+                            <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                            
+                            <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                        </div>
+                
+                        
+                        </div>
+                        <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                        margin-right: 7em;">ADD TO CART</button>
+                        </div>
+                
+                    <div class="product-description">
+                        <p class=" text-center">UNSTITCHED COLLECTION</p>
+                        <p class=" text-center">fusion Top-1Pc</p>
+                        <p class="fw-bold text-center">Rs.1,390.00</p>
+                    </div>
+                    
+                
+                </div>
+                
+                
+                
+            </div>
+    </div>
+        <!-- end of 2nd product row -->
+        <!-- start of 3rd product row -->
+        <div class="row">
+                    
+            <div class="col-lg-4 col-sm-6 ">
+                <div class="image-container">
+                    <img src="../Facebook/Rectangle 148.png" alt="Image" class="img-fluid">
+                    <div class="hover-content">
+                    <div class="checkbox-group ">
+                    <div class="row " style="display: flex;
+                    margin-right: -2em;
+                    margin-top: 21em;
+                    margin-left: -1em;">
+                        <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                    
+                        <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                    
+                        <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+            
+                        <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                        
+                        <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                    </div>
+            
+                    
+                    </div>
+                    <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                    margin-right: 7em;">ADD TO CART</button>
+                    </div>
+            
+                <div class="product-description">
+                    <p class=" text-center">UNSTITCHED COLLECTION</p>
+                    <p class=" text-center">fusion Top-1Pc</p>
+                    <p class="fw-bold text-center">Rs.1,390.00</p>
+                </div>
+                
+            
+            </div>
+            
+        
+        
+        </div>
+            <div class="col-lg-4 col-sm-6 ">
+                <div class="image-container">
+                    <img src="../Facebook/Rectangle 150.png" alt="Image" class="img-fluid">
+                    <div class="hover-content">
+                    <div class="checkbox-group ">
+                    <div class="row " style="display: flex;
+                    margin-right: -2em;
+                    margin-top: 21em;
+                    margin-left: -1em;">
+                        <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                    
+                        <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                    
+                        <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+            
+                        <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                        
+                        <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                    </div>
+            
+                    
+                    </div>
+                    <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                    margin-right: 7em;">ADD TO CART</button>
+                    </div>
+            
+                <div class="product-description">
+                    <p class=" text-center">UNSTITCHED COLLECTION</p>
+                    <p class=" text-center">fusion Top-1Pc</p>
+                    <p class="fw-bold text-center">Rs.1,390.00</p>
+                </div>
+                
+            
+            </div>
+            
+        
+        </div>
+
+            <div class="col-lg-4 col-sm-6 ">
+                <div class="image-container">
+                    <img src="../Facebook/Rectangle 151.png" alt="Image" class="img-fluid">
+                    <div class="hover-content">
+                    <div class="checkbox-group ">
+                    <div class="row " style="display: flex;
+                    margin-right: -2em;
+                    margin-top: 21em;
+                    margin-left: -1em;">
+                        <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                    
+                        <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                    
+                        <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+            
+                        <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                        
+                        <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                    </div>
+            
+                    
+                    </div>
+                    <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                    margin-right: 7em;">ADD TO CART</button>
+                    </div>
+            
+                <div class="product-description">
+                    <p class=" text-center">UNSTITCHED COLLECTION</p>
+                    <p class=" text-center">fusion Top-1Pc</p>
+                    <p class="fw-bold text-center">Rs.1,390.00</p>
+                </div>
+                
+            
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    <!-- end of 3rd product row -->
+    <!-- start of 4th product row -->
+    <div class="row">
+                    
+        <div class="col-lg-4 col-sm-6 ">
+            <div class="image-container">
+                <img src="../Facebook/Rectangle 152.png" alt="Image" class="img-fluid">
+                <div class="hover-content">
+                <div class="checkbox-group ">
+                <div class="row " style="display: flex;
+                margin-right: -2em;
+                margin-top: 21em;
+                margin-left: -1em;">
+                    <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                
+                    <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                
+                    <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+        
+                    <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                    
+                    <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                </div>
+        
+                
+                </div>
+                <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                margin-right: 7em;">ADD TO CART</button>
+                </div>
+        
+            <div class="product-description">
+                <p class=" text-center">UNSTITCHED COLLECTION</p>
+                <p class=" text-center">fusion Top-1Pc</p>
+                <p class="fw-bold text-center">Rs.1,390.00</p>
+            </div>
+            
+        
+        </div>
+        
+    
+    
+    </div>
+        <div class="col-lg-4 col-sm-6 ">
+            <div class="image-container">
+                <img src="../Facebook/Rectangle 149.png" alt="Image" class="img-fluid">
+                <div class="hover-content">
+                <div class="checkbox-group ">
+                <div class="row " style="display: flex;
+                margin-right: -2em;
+                margin-top: 21em;
+                margin-left: -1em;">
+                    <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                
+                    <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                
+                    <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+        
+                    <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                    
+                    <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                </div>
+        
+                
+                </div>
+                <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                margin-right: 7em;">ADD TO CART</button>
+                </div>
+        
+            <div class="product-description">
+                <p class=" text-center">UNSTITCHED COLLECTION</p>
+                <p class=" text-center">fusion Top-1Pc</p>
+                <p class="fw-bold text-center">Rs.1,390.00</p>
+            </div>
+            
+        
+        </div>
+        
+    
+    </div>
+
+        <div class="col-lg-4 col-sm-6 ">
+            <div class="image-container">
+                <img src="../Facebook/Rectangle 153.png" alt="Image" class="img-fluid">
+                <div class="hover-content">
+                <div class="checkbox-group ">
+                <div class="row " style="display: flex;
+                margin-right: -2em;
+                margin-top: 21em;
+                margin-left: -1em;">
+                    <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                
+                    <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                
+                    <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+        
+                    <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                    
+                    <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                </div>
+        
+                
+                </div>
+                <button class="btn btn-secondary shop-button " style="  margin-bottom: 5em;  width: 100%;
+                margin-right: 7em;">ADD TO CART</button>
+                </div>
+        
+            <div class="product-description">
+                <p class=" text-center">UNSTITCHED COLLECTION</p>
+                <p class=" text-center">fusion Top-1Pc</p>
+                <p class="fw-bold text-center">Rs.1,390.00</p>
+            </div>
+            
+        
+        </div>
+        
+        
+        
+    </div>
+    </div>
+    <!-- end of 4th row -->
+                <!-- <div class="col-lg-4 col-sm-6 ">
+                    <div class="image-container">
+                        <img src="../Facebook/Rectangle 22.png" alt="Image" class="img-fluid">
+                        <div class="hover-content">
+                          <div class="checkbox-group ">
+                           <div class="row " style="display: flex;
+                           margin-right: -2em;
+                           margin-top: 21em;
+                           margin-left: -1em;">
+                            <label class="btn btn-outline-secondary  noBorderRadius" for="btnradio1img3" style="width: 18%;">XS</label> &nbsp;
+                          
+                            <label class="btn btn-outline-secondary " for="btnradio2img3" style="width: 18%;">S</label>&nbsp;
+                        
+                            <label class="btn btn-outline-secondary " for="btnradio3img3" style="width: 18%;">M</label>&nbsp;
+                  
+                            <label class="btn btn-outline-secondary " for="btnradio4img3" style="width: 18%;">L</label>&nbsp;
+                            
+                            <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3" style="width: 18%;">XL</label>
+                           </div>
+                  
+                           
+                          </div>
+                          <button class="btn btn-secondary shop-button " style="  margin-bottom: 2em;  width: 100%;
+                          margin-right: 7em;">ADD TO CART</button>
+                        </div>
+                
+                    <div class="product-description">
+                        <p class=" text-center">UNSTITCHED COLLECTION</p>
+                        <p class=" text-center">fusion Top-1Pc</p>
+                        <p class="fw-bold text-center">Rs.1,390.00</p>
+                    </div>
+                    
+                  
+                </div>
+                
+                <div class="col-lg-4 col-sm-6">
+                    <img  class="img-fluid" src="Rectangle 23.png" alt="suit pic">
+                    <div class="image-desciped">
+                        <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio1img2" autocomplete="off" checked>
+                            <label class="btn btn-outline-secondary me-2 noBorderRadius" for="btnradio1img2">XS</label>
+                        
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2img2" autocomplete="off">
+                            <label class="btn btn-outline-secondary me-2" for="btnradio2img2">S</label>
+                        
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3img2" autocomplete="off">
+                            <label class="btn btn-outline-secondary me-2" for="btnradio3img2">M</label>
+                
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4img2" autocomplete="off">
+                            <label class="btn btn-outline-secondary me-2" for="btnradio4img2">L</label>
+                
+                            <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio5img2" autocomplete="off">
+                            <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img2">XL</label>
+                          </div>
+                          
+                    </div>
+                    <button type="button" class="btn ADDto btn-secondary btn-sm">ADD TO CART</button>
+                    <div class="product-description">
+                        <p class=" text-center">UNSTITCHED COLLECTION</p>
+                        <p class=" text-center">fusion Top-1Pc</p>
+                        <p class="fw-bold text-center">Rs.1,390.00</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    
+                    <img  class="img-fluid image-container" src="Rectangle 24.png" alt="suit pic">
+                
+                    <div class="image-desciped">
+                        <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio1img3" autocomplete="off" checked>
+                            <label class="btn btn-outline-secondary me-2 noBorderRadius" for="btnradio1img3">XS</label>
+                        
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2img3" autocomplete="off">
+                            <label class="btn btn-outline-secondary me-2" for="btnradio2img3">S</label>
+                        
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3img3" autocomplete="off">
+                            <label class="btn btn-outline-secondary me-2" for="btnradio3img3">M</label>
+                
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio4img3" autocomplete="off">
+                            <label class="btn btn-outline-secondary me-2" for="btnradio4img3">L</label>
+                
+                            <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio5img3" autocomplete="off">
+                            <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5img3">XL</label>
+                        </div>
+                    </div>
+                
+                    <button type="button" class="btn ADDto btn-secondary btn-sm">ADD TO CART</button>
+                    <div class="product-description">
+                        <p class=" text-center">UNSTITCHED COLLECTION</p>
+                        <p class=" text-center">fusion Top-1Pc</p>
+                        <p class="fw-bold text-center">Rs.1,390.00</p>
+                    </div>
+                  
+
+                </div> -->
+            
+      
+                   
+                       
+                    
+   
+                
+                    <!-- <div class="row">
+                        <div class="col-lg-4 col-sm-6  ">
+                            <img  class="img-fluid" src="Rectangle 148.png" alt="suit pic">
+                            <div class="image-desciped">
+                                <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                    <label class="btn btn-outline-secondary me-2 noBorderRadius" for="btnradio1">XS</label>
+                                
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                    <label class="btn btn-outline-secondary me-2" for="btnradio2">S</label>
+                                
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                    <label class="btn btn-outline-secondary me-2" for="btnradio3">M</label>
+                        
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                    <label class="btn btn-outline-secondary me-2" for="btnradio4">L</label>
+                        
+                                    <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio5" autocomplete="off">
+                                    <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5">XL</label>
+                                  </div>
+                                  
+                            </div>
+                            <button type="button" class="btn ADDto btn-secondary btn-sm">ADD TO CART</button>
+                            <div class="product-description">
+                                <p class=" text-center">UNSTITCHED COLLECTION</p>
+                                <p class=" text-center">fusion Top-1Pc</p>
+                                <p class="fw-bold text-center">Rs.1,390.00</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 ">
+                            <img  class="img-fluid" src="Rectangle 150.png" alt="suit pic">
+                            <div class="image-desciped">
+                                <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                    <label class="btn btn-outline-secondary me-2 noBorderRadius" for="btnradio1">XS</label>
+                                
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                    <label class="btn btn-outline-secondary me-2" for="btnradio2">S</label>
+                                
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                    <label class="btn btn-outline-secondary me-2" for="btnradio3">M</label>
+                        
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                    <label class="btn btn-outline-secondary me-2" for="btnradio4">L</label>
+                        
+                                    <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio5" autocomplete="off">
+                                    <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5">XL</label>
+                                  </div>
+                            </div>
+                            <button type="button" class="btn ADDto btn-secondary btn-sm">ADD TO CART</button>
+                            <div class="product-description">
+                                <p class=" text-center">UNSTITCHED COLLECTION</p>
+                                <p class=" text-center">fusion Top-1Pc</p>
+                                <p class="fw-bold text-center">Rs.1,390.00</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 ">
+                            <img  class="img-fluid" src="Rectangle 152.png" alt="suit pic">
+                            <div class="image-desciped">
+                                <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                    <label class="btn btn-outline-secondary me-2 noBorderRadius" for="btnradio1">XS</label>
+                                
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                    <label class="btn btn-outline-secondary me-2" for="btnradio2">S</label>
+                                
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                    <label class="btn btn-outline-secondary me-2" for="btnradio3">M</label>
+                        
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                    <label class="btn btn-outline-secondary me-2" for="btnradio4">L</label>
+                        
+                                    <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio5" autocomplete="off">
+                                    <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5">XL</label>
+                                  </div>
+                            </div>
+                            <button type="button" class="btn ADDto btn-secondary btn-sm">ADD TO CART</button>
+                            <div class="product-description">
+                                <p class=" text-center">UNSTITCHED COLLECTION</p>
+                                <p class=" text-center">fusion Top-1Pc</p>
+                                <p class="fw-bold text-center">Rs.1,390.00</p>
+                            </div>
+                        </div>
+
+                </div> -->
+                <!-- <div class="row">
+                    <div class="col-lg-4 col-sm-6  ">
+                        <img  class="img-fluid " src="Rectangle 149.png" alt="suit pic">
+                        <div class="image-desciped">
+                            <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-secondary me-2 noBorderRadius" for="btnradio1">XS</label>
+                            
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-secondary me-2" for="btnradio2">S</label>
+                            
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-secondary me-2" for="btnradio3">M</label>
+                    
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                <label class="btn btn-outline-secondary me-2" for="btnradio4">L</label>
+                    
+                                <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio5" autocomplete="off">
+                                <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5">XL</label>
+                              </div>
+                        </div>
+                        <button type="button" class="btn ADDto btn-secondary btn-sm">ADD TO CART</button>
+                        <div class="product-description">
+                            <p class=" text-center">UNSTITCHED COLLECTION</p>
+                            <p class=" text-center">fusion Top-1Pc</p>
+                            <p class="fw-bold text-center">Rs.1,390.00</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 ">
+                        <img  class="img-fluid" src="Rectangle 151.png" alt="suit pic">
+                        <div class="image-desciped">
+                            <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-secondary me-2 noBorderRadius" for="btnradio1">XS</label>
+                            
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-secondary me-2" for="btnradio2">S</label>
+                            
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-secondary me-2" for="btnradio3">M</label>
+                    
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                <label class="btn btn-outline-secondary me-2" for="btnradio4">L</label>
+                    
+                                <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio5" autocomplete="off">
+                                <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5">XL</label>
+                              </div>
+                        </div>
+                        <button type="button" class="btn ADDto btn-secondary btn-sm">ADD TO CART</button>
+                        <div class="product-description">
+                            <p class=" text-center">UNSTITCHED COLLECTION</p>
+                            <p class=" text-center">fusion Top-1Pc</p>
+                            <p class="fw-bold text-center">Rs.1,390.00</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 ">
+                        <img  class="img-fluid" src="Rectangle 153.png" alt="suit pic">
+                        <div class="image-desciped">
+                            <div class="btn-group " role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-secondary me-2 noBorderRadius" for="btnradio1">XS</label>
+                            
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-secondary me-2" for="btnradio2">S</label>
+                            
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-secondary me-2" for="btnradio3">M</label>
+                    
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                <label class="btn btn-outline-secondary me-2" for="btnradio4">L</label>
+                    
+                                <input type="radio" class="btn-check noBorderRadius" name="btnradio" id="btnradio5" autocomplete="off">
+                                <label class="btn btn-outline-secondary noBorderRadius" for="btnradio5">XL</label>
+                              </div>
+                        </div>
+                        <button type="button" class="btn ADDto btn-secondary btn-sm">ADD TO CART</button>
+                        <div class="product-description">
+                            <p class=" text-center">UNSTITCHED COLLECTION</p>
+                            <p class=" text-center">fusion Top-1Pc</p>
+                            <p class="fw-bold text-center">Rs.1,390.00</p>
+                        </div>
+                    </div>
+
+            </div> -->
+                </div>   
+        </div>
+
+        
+        
+        
+    </div>
+</div>
+<div class="container-fluid mt-3  bg-light">
+<div class="row ">
+    <div class="col-3">
+        <div class="lead text-center my-3">
+           <p>Find Stores</p>
+           <img   src="placeholder 1.jpg" alt="lodd">
+        </div>
+
+    </div>
+    <div class="col-6 border py-3">
+        <div class="text-center ">
+            <p>Sign up for our Newsletter to receive<br>
+                updates on special offers, news and events</p>
+            <input class="w-50" type="email" placeholder="Enter Your Email" width=>
+            <button type="button" class="btn btn-secondary btn-sm">Subcribe</button>
+        </div>
+
+
+    </div>
+    <div class="col-3 lead text-center my-3 ">
+        <p>Get in Touch</p>
+        <img  class="mx-3 " src="telephone 1.jpg" alt="telephone">
+        <img src="envelope 1.jpg" alt="email">
+
+    </div>
+</div>
+</div>
+<div class="back-data-foot">
+<div class="container-fluid py-5  d-flex flex-column justify-content-center ">
+    <div class="row">
+        <div class="col-3  px-5">
+            <h6 class="text-light">Our Company</h6>
+            <ul class="list-unstyled foot-color ">
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="col-3   ">
+            <h6 class="text-light">Customer Support</h6>
+            <ul class="list-unstyled foot-color ">
+                <li>Track Your Order</li>
+                <li>SWYFT Tracking</li>
+                <li>Call Courier Tracking</li>
+                <li>Return and Exchange</li>
+                <li>How to Order</li>
+                <li>Shipping Policey</li>
+            </ul>
+        </div>
+        <div class="col-3  ">
+            <h6 class="text-light">Help</h6>
+            <ul class="list-unstyled foot-color">
+                <li>Terms and Condition</li>
+                <li>FAQs</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="col-3 ">
+
+            <h6 class="text-light ">Follow Us</h6>
+            <br>
+            
+                <img src="facebook (3) 1.png" alt="facebook">
+                <img src="instagram (7) 1.png" alt="insta" class="ms-3" >
+
+        </div>
+    </div>
+</div>
+
+<footer>
+
+     <p class="text-light text-center">Copyright &copy 2020 SO KAMAL powered by Abdullah</p>
+</footer>
+  
+
+
+ 
+
+    
+</body>
+</html>
